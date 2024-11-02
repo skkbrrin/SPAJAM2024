@@ -600,6 +600,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4e25fae2de8954cbdc2e7dd882defc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  QuestionTurn: 0
+  OBottonPush: 0
+  questionArray:
+  - QestionText: "\u4E00\u554F\u76EE"
+    OBottonText: 
+    XBottonTex: 
+    OText: 
+    XText: 
+    OScore: 0
+    XScore: 0
+  - QestionText: "\u4E8C\u554F\u76EE"
+    OBottonText: 
+    XBottonTex: 
+    OText: 
+    XText: 
+    OScore: 0
+    XScore: 0
+  - QestionText: "\u4E09\u554F\u76EE"
+    OBottonText: 
+    XBottonTex: 
+    OText: 
+    XText: 
+    OScore: 0
+    XScore: 0
+  - QestionText: 
+    OBottonText: 
+    XBottonTex: 
+    OText: 
+    XText: 
+    OScore: 0
+    XScore: 0
+  - QestionText: 
+    OBottonText: 
+    XBottonTex: 
+    OText: 
+    XText: 
+    OScore: 0
+    XScore: 0
+  - QestionText: 
+    OBottonText: 
+    XBottonTex: 
+    OText: 
+    XText: 
+    OScore: 0
+    XScore: 0
+  - QestionText: 
+    OBottonText: 
+    XBottonTex: 
+    OText: 
+    XText: 
+    OScore: 0
+    XScore: 0
+  - QestionText: 
+    OBottonText: 
+    XBottonTex: 
+    OText: 
+    XText: 
+    OScore: 0
+    XScore: 0
+  - QestionText: 
+    OBottonText: 
+    XBottonTex: 
+    OText: 
+    XText: 
+    OScore: 0
+    XScore: 0
+  - QestionText: 
+    OBottonText: 
+    XBottonTex: 
+    OText: 
+    XText: 
+    OScore: 0
+    XScore: 0
 --- !u!114 &1154153619
 MonoBehaviour:
   m_ObjectHideFlags: 0
