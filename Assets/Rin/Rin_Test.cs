@@ -36,7 +36,7 @@ public class Rin_Test : MonoBehaviour
             {
                 this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].OText;
             }
-            else
+            else 
             {
                 this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].XText;
             }

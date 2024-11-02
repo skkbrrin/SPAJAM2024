@@ -1,9 +1,11 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class NoChoice : MonoBehaviour
 {
+    public Rin_Test rin_Test;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +25,15 @@ public class NoChoice : MonoBehaviour
     public void NoButtonDown()
     {
         Debug.Log("x");
+        if (rin_Test.QuestionTurn)
+        {
+            rin_Test.QuestionTurn = false;
+            rin_Test.OBottonPush = false;
+        }
+        else
+        {
+            rin_Test.QuestionTurn = true;
+            rin_Test.currentQuestion++;
+        }
     }
 }
