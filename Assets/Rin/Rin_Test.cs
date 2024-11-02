@@ -10,8 +10,9 @@ using UnityEngine;
 public class Rin_Test : MonoBehaviour
 {
     GameObject Question;
-   public bool QuestionTurn = true; // trueが問題ターン
-   public bool OBottonPush = false; // trueがOを押したとき
+    public bool QuestionTurn = true; // trueが問題ターン
+    public bool OBottonPush = false; // trueがOを押したとき
+    public int currentQuestion = 0;
 
     [SerializeField]
     private Question[] questionArray = new Question[10];
@@ -27,17 +28,17 @@ public class Rin_Test : MonoBehaviour
     {
         if (QuestionTurn)
         {
-            this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[0].QestionText;
+            this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].QestionText;
         }
         else
         {
             if (OBottonPush == true)
             {
-                this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[0].OText;
+                this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].OText;
             }
             else
             {
-                this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[0].XText;
+                this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].XText;
             }
 
         }
