@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -26,21 +27,26 @@ public class Rin_Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (QuestionTurn)
+        if (currentQuestion < questionArray.Length)
         {
-            this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].QestionText;
-        }
-        else
+            if (QuestionTurn)
+            {
+                this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].QestionText;
+            }
+            else
+            {
+                if (OBottonPush == true)
+                {
+                    this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].OText;
+                }
+                else
+                {
+                    this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].XText;
+                }
+            }
+        }else
         {
-            if (OBottonPush == true)
-            {
-                this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].OText;
-            }
-            else 
-            {
-                this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].XText;
-            }
-
+        SceneManager.LoadScene("Titlecene");
         }
     }
 }
