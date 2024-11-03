@@ -31,6 +31,7 @@ public class YesChoice : MonoBehaviour
         else
         {
             rin_Test.QuestionTurn=true;
+            rin_Test.OScore += 100;
             rin_Test.currentQuestion++;
         }
     }

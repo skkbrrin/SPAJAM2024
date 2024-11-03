@@ -14,9 +14,16 @@ public class Rin_Test : MonoBehaviour
     public bool QuestionTurn = true; // trueが問題ターン
     public bool OBottonPush = false; // trueがOを押したとき
     public int currentQuestion = 0;
+    public int OScore = 0;
+    public int XScore = 0;
 
     [SerializeField]
     private Question[] questionArray = new Question[10];
+
+    //public int GetScore()
+    //{
+    //    return this.OScore + this.XScore;
+    //}
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +53,7 @@ public class Rin_Test : MonoBehaviour
             }
         }else
         {
-        SceneManager.LoadScene("Titlecene");
+        SceneManager.LoadScene("ResultScene");
         }
     }
 }

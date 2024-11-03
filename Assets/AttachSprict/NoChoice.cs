@@ -33,6 +33,7 @@ public class NoChoice : MonoBehaviour
         else
         {
             rin_Test.QuestionTurn = true;
+            rin_Test.XScore += 50;
             rin_Test.currentQuestion++;
         }
     }
