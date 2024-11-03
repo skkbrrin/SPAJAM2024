@@ -14,7 +14,8 @@ public class ScoreDirector : MonoBehaviour
     {
         this.scereText = GameObject.Find("Score");
         this.scereText.GetComponent<TextMeshProUGUI>().text =
-            Score.score.ToString() + " ninn";
+            Score.score.ToString() + "•[ <br> Šl“¾‚µ‚Ü‚µ‚½";
+
 
     }
 
