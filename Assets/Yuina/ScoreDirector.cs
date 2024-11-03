@@ -1,8 +1,9 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ScoreDirector : MonoBehaviour
 {
@@ -14,8 +15,7 @@ public class ScoreDirector : MonoBehaviour
     {
         this.scereText = GameObject.Find("Score");
         this.scereText.GetComponent<TextMeshProUGUI>().text =
-            Score.score.ToString() + " ninn";
-
+            Score.score.ToString() + " 票\n獲得しました。";
     }
 
     // Update is called once per frame
