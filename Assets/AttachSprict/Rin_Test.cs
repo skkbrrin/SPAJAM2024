@@ -43,6 +43,7 @@ public class Rin_Test : MonoBehaviour
             if (QuestionTurn)
             {
                 WAKU.SetActive(true);
+                KAISETUWAKU.SetActive(false);
                 this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].QestionText;
 
             }
@@ -50,11 +51,14 @@ public class Rin_Test : MonoBehaviour
             {
                 if (OBottonPush == true)
                 {
+                    WAKU.SetActive(false);
                     KAISETUWAKU.SetActive(true);
                     this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].OText;
+                    
                 }
                 else
                 {
+                    WAKU.SetActive(false);
                     KAISETUWAKU.SetActive(true);
                     this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].XText;
                 }
