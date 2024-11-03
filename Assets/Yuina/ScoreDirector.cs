@@ -1,8 +1,9 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ScoreDirector : MonoBehaviour
 {
@@ -14,9 +15,7 @@ public class ScoreDirector : MonoBehaviour
     {
         this.scereText = GameObject.Find("Score");
         this.scereText.GetComponent<TextMeshProUGUI>().text =
-            Score.score.ToString() + "ï[ <br> älìæÇµÇ‹ÇµÇΩ";
-
-
+            Score.score.ToString() + " Á•®\nÁç≤Âæó„Åó„Åæ„Åó„Åü„ÄÇ";
     }
 
     // Update is called once per frame

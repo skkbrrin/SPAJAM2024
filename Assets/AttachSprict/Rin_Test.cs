@@ -44,6 +44,7 @@ public class Rin_Test : MonoBehaviour
         {
             if (QuestionTurn)
             {
+                this.Question.GetComponent<TextMeshProUGUI>().color = new Color32(255, 255, 255, 255); // 
                 WAKU.SetActive(true);
                 KAISETUWAKU.SetActive(false);
                 NEXT.SetActive(false);
@@ -54,6 +55,7 @@ public class Rin_Test : MonoBehaviour
             }
             else
             {
+                this.Question.GetComponent<TextMeshProUGUI>().color = new Color32(66,25,12,255); //42190c
                 if (OBottonPush == true)
                 {
                     WAKU.SetActive(false);
@@ -63,6 +65,7 @@ public class Rin_Test : MonoBehaviour
                     BBOTTON.SetActive(false);
 
                     this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].OText;
+
                     
                 }
                 else
