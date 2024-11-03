@@ -26,12 +26,12 @@ public class YesChoice : MonoBehaviour
         if (rin_Test.QuestionTurn)
         {
             rin_Test.QuestionTurn = false;
+            Score.score = rin_Test.questionArray[rin_Test.currentQuestion].OScore;
             rin_Test.OBottonPush = true;
         }
         else
         {
             rin_Test.QuestionTurn=true;
-            rin_Test.OScore += 100;
             rin_Test.currentQuestion++;
         }
     }

@@ -18,21 +18,17 @@ public class Rin_Test : MonoBehaviour
     public int XScore = 0;
 
     [SerializeField]
-    private Question[] questionArray = new Question[10];
+    public Question[] questionArray = new Question[10];
     [SerializeField]
     private GameObject WAKU;
     [SerializeField]
     private GameObject KAISETUWAKU;
 
-    //public int GetScore()
-    //{
-    //    return this.OScore + this.XScore;
-    //}
-
     // Start is called before the first frame update
     void Start()
     {
         this.Question = GameObject.Find("Rin_Test");
+        Score.score = 0;
     }
 
     // Update is called once per frame

@@ -28,12 +28,12 @@ public class NoChoice : MonoBehaviour
         if (rin_Test.QuestionTurn)
         {
             rin_Test.QuestionTurn = false;
+            Score.score = rin_Test.questionArray[rin_Test.currentQuestion].XScore;
             rin_Test.OBottonPush = false;
         }
         else
         {
             rin_Test.QuestionTurn = true;
-            rin_Test.XScore += 50;
             rin_Test.currentQuestion++;
         }
     }
