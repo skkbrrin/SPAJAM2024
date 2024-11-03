@@ -23,6 +23,12 @@ public class Rin_Test : MonoBehaviour
     private GameObject WAKU;
     [SerializeField]
     private GameObject KAISETUWAKU;
+    [SerializeField]
+    private GameObject NEXT;
+    [SerializeField]
+    private GameObject ABOTTON;
+    [SerializeField]
+    private GameObject BBOTTON;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +46,9 @@ public class Rin_Test : MonoBehaviour
             {
                 WAKU.SetActive(true);
                 KAISETUWAKU.SetActive(false);
+                NEXT.SetActive(false);
+                ABOTTON.SetActive(true);
+                BBOTTON.SetActive(true);
                 this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].QestionText;
 
             }
@@ -49,6 +58,10 @@ public class Rin_Test : MonoBehaviour
                 {
                     WAKU.SetActive(false);
                     KAISETUWAKU.SetActive(true);
+                    NEXT.SetActive(true) ;
+                    ABOTTON.SetActive(false);
+                    BBOTTON.SetActive(false);
+
                     this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].OText;
                     
                 }
@@ -56,6 +69,10 @@ public class Rin_Test : MonoBehaviour
                 {
                     WAKU.SetActive(false);
                     KAISETUWAKU.SetActive(true);
+                    NEXT.SetActive(true);
+                    ABOTTON.SetActive(false);
+                    BBOTTON.SetActive(false);
+
                     this.Question.GetComponent<TextMeshProUGUI>().text = this.questionArray[currentQuestion].XText;
                 }
             }
