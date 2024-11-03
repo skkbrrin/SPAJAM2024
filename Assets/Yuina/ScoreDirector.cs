@@ -21,6 +21,7 @@ public class ScoreDirector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //SceneManager.LoadScene("");
+        if(Input.GetMouseButtonDown(0))
+        SceneManager.LoadScene("Titlecene");
     }
 }
